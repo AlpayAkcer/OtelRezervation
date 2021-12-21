@@ -14,6 +14,6 @@ namespace OtelYeniProje.Entity
     public partial class OdaDurum_Result
     {
         public string DurumAd { get; set; }
-        public Nullable<int> Sayi { get; set; }
+        public Nullable<int> Sayı { get; set; }
     }
 }

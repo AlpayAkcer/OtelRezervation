@@ -24,7 +24,7 @@ namespace OtelYeniProje.Formlar.Grafikler
             var durumlar = db.OdaDurum();
             foreach (var x in durumlar)
             {
-                chartControl1.Series["Odalar"].Points.AddPoint(x.DurumAd, double.Parse(x.Sayi.ToString()));
+                chartControl1.Series["Odalar"].Points.AddPoint(x.DurumAd, double.Parse(x.Sayı.ToString()));
             }
         }
     }

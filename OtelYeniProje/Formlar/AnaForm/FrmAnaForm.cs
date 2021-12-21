@@ -54,16 +54,16 @@ namespace OtelYeniProje.Formlar.AnaForm
 
             //Ürün-Stok Grafiği
             var urunler = db.TblUrun.ToList();
-            foreach(var x in urunler)
+            foreach (var x in urunler)
             {
                 chartControl1.Series["Urun-Stok"].Points.AddPoint(x.UrunAd, double.Parse(x.Toplam.ToString()));
             }
 
             //Oda Doluluk Grafiği
             var durumlar = db.OdaDurum();
-            foreach(var x in durumlar)
+            foreach (var x in durumlar)
             {
-                chartControl2.Series["Durumlar"].Points.AddPoint(x.DurumAd, double.Parse(x.Sayi.ToString()));
+                chartControl2.Series["Durumlar"].Points.AddPoint(x.DurumAd, double.Parse(x.Sayı.ToString()));
             }
         }
     }
